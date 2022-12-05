@@ -1,0 +1,45 @@
+.select-person{
+    max-height: 300px;
+    min-height: 100px;
+    overflow-y: auto;
+    z-index: 100;
+    background-color: #fff;
+}
+.search-data{
+    top:0px;
+    left:0px;
+}
+.show-search{
+    top:30px;
+    left: 0px;
+}
+.user-avatar{
+    width: 21.4px;
+    height: 21.4px;
+    object-fit: cover;
+}
+.suggestion-item{
+    width: 200px;
+    max-width: 250px;
+    overflow-x: hidden;
+}
+.member-delete{
+    // border: 1px solid #f24;
+    border-radius: 50%;
+    position: absolute;
+    right:0px;
+    top:0px;
+    height: 12px;
+    width: 14px;
+    font-size: 6px;
+    padding: 1px;
+    transform: translate(0%,-50%);
+}
+.member-delete::after{
+    content: "x";
+    position: absolute;
+    top:0px;
+    right: 0px;
+    transform: translate(-50%,-25%);
+    color: red;
+}

@@ -1,0 +1,30 @@
+@mixin mobile {
+    @media (max-width:396px) {
+        @content;
+    }
+}
+@mixin pad{
+    @media (min-width:767px) {
+        @content;
+    }
+}
+@mixin desktop{
+    @media (min-width:992px) {
+        @content;
+    }
+}
+.home-brand-img{
+    @include mobile{
+        height: 352px;
+        width: 375px;
+    }
+    @include pad{
+        height: 315px;
+        width: 390px;
+    }
+    @include desktop{
+        height: 315px;
+        width: 730px;
+    }
+    object-fit: cover;
+}

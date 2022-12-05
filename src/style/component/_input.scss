@@ -1,0 +1,28 @@
+.viking-input-wrapper {
+  display: flex;
+  width: 100%;
+  margin-bottom: 5px;
+  position: relative;
+  .icon-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 35px;
+    justify-content: center;
+    color: $input-color;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    svg {
+      color: $input-placeholder-color;
+    }
+  }
+}
+.inner-input{
+  width: 100%;
+}
+
+.item-highlighted {
+  background: rgba(0,0,0,0.2);
+  color: $white;
+}

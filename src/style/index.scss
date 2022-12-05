@@ -1,0 +1,71 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "./helpers/variables";
+@import "../../node_modules/bootstrap/scss/bootstrap";
+@import "./base/customereset";
+@import "./abstracts/selfclass";
+@import "./layout/header";
+@import "./layout/aside";
+@import "./layout/mainLayout";
+@import "./pages/login";
+@import "./pages/home";
+@import "./pages/task";
+@import "./component/menu";
+@import "./component/modal";
+@import "./component/icon";
+@import "./component/input";
+@import "./component/selectPerson";
+@import "./component/upload";
+$utilities: map-merge(
+  $utilities, (
+    "font-size": map-merge(
+      map-get($utilities, "font-size"),
+      ( responsive: true ),
+    ),
+  )
+);
+.navbar-toggler-icon{
+  display: none !important;
+  background-image: none !important;
+}
+.customize{
+  a{
+    color: #772400 !important;
+  }
+}
+.scroll-kanban{
+  overflow-x: auto !important;
+  z-index: 10;
+  scroll-behavior: smooth;
+  flex: 1;
+  &::-webkit-scrollbar{
+    display: none ;
+  }
+}
+.input-outline:focus{
+  outline: none !important;
+}
+
+.font-color{
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.bg-kanban{
+  background-color: #F8B52E; // #FFFACD;
+  margin: 0 -8px;
+}
+.note-board-overflow{
+  height: calc(100vh - 230px);
+  overflow-y: auto;
+  align-content: flex-start;
+}
+.team-board-overflow{
+  height: calc(100vh - 230px);
+  overflow-y: auto;
+  align-content: flex-start;
+}
+
+
+
+
+
+

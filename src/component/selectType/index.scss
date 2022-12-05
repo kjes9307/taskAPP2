@@ -1,0 +1,33 @@
+.typeselect{
+    width: 24px;
+    height: 24px;
+    border-radius: 25%;
+}
+.type-option{
+    cursor: pointer;
+    &.active{
+        background-color: rgba(#ffc107,0.1);
+    }
+}
+.type-option:hover{
+    background-color: #e9ecef;
+}
+.typedown-menu{
+    top: 25px;
+    left: 0px;
+    min-height: 150px;
+    width: 200px;
+    background-color: #fff;
+}
+.bg-sp{
+    background-color:#6f42c1;
+}
+.z-20{
+    z-index: 20;
+}
+.z-10{
+    z-index: 10;
+}
+.select-type-layout{
+    transform: translate(0%,-50%);
+  }

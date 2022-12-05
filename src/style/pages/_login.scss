@@ -1,0 +1,38 @@
+@mixin pad{
+    @media (min-width:796px) {
+        @content;
+    }
+}
+@mixin desktop{
+    @media (min-width:1200px) {
+        @content;
+    }
+}
+.login-btn{
+    width: 348px;
+    height: 48px;
+}
+.mb-8{
+    margin-bottom: $spacer*4;
+    @include pad{
+        margin-bottom: $spacer*2;
+    }
+    @include desktop{
+        margin-bottom: $spacer*1;
+    }
+}
+.alert-font{
+    font-size: $font-size-base* 0.8 !important;
+}
+
+.login-img{
+    @include pad{
+        width: 360px;
+        height: 480px;
+    }
+    @include desktop{
+        width: 480px;
+        height: 640px;
+    }
+    object-fit: cover;
+}

@@ -1,0 +1,27 @@
+
+.click:hover{
+    color: #D54100 !important;  
+}
+
+.footer{
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.footer-font{
+    color: #909090;
+}
+@media(max-width:592px){
+
+    .toggle-dropdown{
+        width: 70%;
+        text-align: right;
+        transform: translateY(40%);
+    }
+    .fa-2x{
+        font-size: 1.5rem;
+    }
+    .footer-font{
+        font-size: 12px !important;
+    }
+}

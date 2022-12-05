@@ -1,0 +1,42 @@
+.crop-img{
+    height: 480px;
+    width: 360px;
+}
+.file-name {
+    margin-left: 5px;
+    margin-right: 40px;
+    svg {
+      margin-right: 5px;
+      color: #adb5bd;
+    }
+}
+.file-status {
+    display: inline-block;
+    line-height: inherit;
+  }
+.file-actions {
+    display: inline-block;
+    line-height: inherit;
+    cursor: pointer;
+    &:hover {
+        background-color: #e9ecef;
+    }
+}
+.file-preview{
+    border: dashed #dee2e6 !important;
+}
+.obj-contain{
+    object-fit: contain;
+}
+.obj-fill{
+    object-fit: fill;
+}
+.obj-cover{
+    object-fit: cover;
+}
+.uploaded-img{
+    height: 50px;
+    width: 50px;
+    border: dashed #dee2e6 !important;
+    object-fit: cover;
+}

@@ -1,0 +1,28 @@
+
+.dropdown-self {
+    text-align: center;
+    background-color: #fff;
+
+    max-height: 0px;
+    width: 100vw;
+
+    display: none;
+    position: absolute;
+    
+    right: 0px;
+    top: 30px;
+    
+    overflow: hidden;
+    transition: all 0.8s;
+    transform: translateX(3%);
+    z-index: 120;
+    li{
+        a:hover{
+            color: #F8B52E !important;
+        }
+    }
+}
+.active-self{
+    display: block;
+    max-height: 250px;
+}
