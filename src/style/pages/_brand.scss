@@ -1,0 +1,35 @@
+@mixin image-set{
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+.card{
+    width: 100%;
+    height: 250px;
+}
+.brand-img{
+    background-image: url("../../../public/fran-innocenti-HRfvMO9I69U-unsplash.jpg");
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    @include image-set;
+    width: 100%;
+    height: 360px;
+    border-radius: 4px;
+}
+.brand-img1{
+    background-image: url("../../../public/remy_loz-3S0INpfREQc-unsplash.jpg");
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply;
+    @include image-set;
+    width: 100%;
+    height: 360px;
+    border-radius: 4px;
+}
+.info-text{
+    border: black 1px solid;
+    height: 150px;
+    padding: 12px;
+}
+.text-gradient{
+   color: rgba(#ff00cc, 1)
+}
