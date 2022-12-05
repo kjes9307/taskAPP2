@@ -8,8 +8,8 @@ export const BrandInfo = () =>{
                     <div className="d-flex justify-content-between align-items-center brand-line">
                         <div className="fs-3 text-gradient">TASK</div>
                         <ul className="d-none d-sm-block d-sm-flex mb-0">
-                            <li className="list-unstyled "><a href="#" className="text-decoration-none fs-6 text-white">先看看再決定</a></li>
-                            <li className="list-unstyled ms-7"><a href="#" className="text-decoration-none fs-6 text-white">登入</a></li>
+                            <li className="list-unstyled "><Button>先看看再決定</Button></li>
+                            <li className="list-unstyled ms-1"><Button>登入</Button></li>
                         </ul>
                     </div>
                 </Container>
@@ -80,7 +80,7 @@ export const BrandInfo = () =>{
                 <Container>
                     <div className="text-center mt-5">
                         <h2 className="text-white fs-3">關於我們的目標</h2>
-                        <p className="text-white mt-4 fs-6">致力於適合小型團隊合作的軟體開發<br/>  CopyRight© 2022 僅用於練習使用</p>
+                        <p className="text-white mt-4">致力於適合小型團隊合作的軟體開發<br/>  CopyRight© 2022 僅用於練習使用</p>
                     </div>
                 </Container>
             </section> 
