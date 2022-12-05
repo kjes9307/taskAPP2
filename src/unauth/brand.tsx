@@ -5,8 +5,8 @@ export const BrandInfo = () =>{
         <div>
             <header className="sticky-top pt-2">
                 <Container>
-                    <div className="d-flex justify-content-between align-items-center border-bottom border-white">
-                        <div className="fs-3 text-gradient">Brand Logo</div>
+                    <div className="d-flex justify-content-between align-items-center brand-line">
+                        <div className="fs-3 text-gradient">TASK</div>
                         <ul className="d-none d-sm-block d-sm-flex mb-0">
                             <li className="list-unstyled "><a href="#" className="text-decoration-none fs-6 text-white">先看看再決定</a></li>
                             <li className="list-unstyled ms-7"><a href="#" className="text-decoration-none fs-6 text-white">登入</a></li>
@@ -62,19 +62,13 @@ export const BrandInfo = () =>{
                             <li className="list-unstyled">
                                 <h3 className="text-white fs-4 text-center">對症下藥，專案製作</h3>
                                 <p className="text-white fs-6 text-center opacity-75">
-                                    進度制課程安排&個人化學習建議<br/>有效管理你的學習動力
+                                    進度安排&個人化<br/>有效管理
                                 </p>
                             </li>
                             <li className="list-unstyled">
-                                <h3 className="text-white fs-4 text-center">激發你的學習潛力</h3>
+                                <h3 className="text-white fs-4 text-center">團隊作戰</h3>
                                 <p className="text-white fs-6 text-center opacity-75">
-                                    進度制課程安排&個人化學習建議<br/>有效管理你的學習動力
-                                </p>
-                            </li>
-                            <li className="list-unstyled">
-                                <h3 className="text-white fs-4 text-center">一對一指導</h3>
-                                <p className="text-white fs-6 text-center opacity-75">
-                                    針對目的進行客製化課程安排<br/>快速的學以致用
+                                    針對目標進行客製化安排<br/>快速反應
                                 </p>
                             </li>
                         </ul>
@@ -84,7 +78,7 @@ export const BrandInfo = () =>{
             </section>
             <section>
                 <Container>
-                    <div className="text-center mt-2">
+                    <div className="text-center mt-5">
                         <h2 className="text-white fs-3">關於我們的目標</h2>
                         <p className="text-white mt-4 fs-6">致力於適合小型團隊合作的軟體開發<br/>  CopyRight© 2022 僅用於練習使用</p>
                     </div>

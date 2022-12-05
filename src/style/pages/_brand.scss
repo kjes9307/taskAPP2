@@ -33,3 +33,17 @@
 .text-gradient{
    color: rgba(#ff00cc, 1)
 }
+.brand-line{
+    position: relative;
+}
+.brand-line::before{
+    content: "";
+    border-bottom: #fff 1px solid;
+    position: absolute;
+    left: 50% !important;
+    top: 0 !important;
+    inset: 0;
+    width: 100px;
+    height: 100%;
+    transform: translate(-50%,0%);
+}
