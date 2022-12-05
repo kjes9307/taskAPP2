@@ -52,7 +52,7 @@ export const RegisterForm = (props:switchModeParam) => {
         }
         {errors?.email?.type === "required" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>This field is required
+          <Icon icon='circle-exclamation' />This field is required
           </div>
         }
       </Form.Group>
@@ -61,17 +61,17 @@ export const RegisterForm = (props:switchModeParam) => {
         <Form.Control type="text" placeholder="暱稱" {...register("name", {required: true ,minLength: 2, maxLength:8})} />
         {errors?.name?.type === "required" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>This field is required
+          <Icon icon='circle-exclamation' />This field is required
           </div>
         }
         {errors?.name?.type === "minLength" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>name need at least 2 characters
+          <Icon icon='circle-exclamation' />name need at least 2 characters
           </div>
         }
         {errors?.name?.type === "maxLength" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>name can not over 8 characters
+          <Icon icon='circle-exclamation' />name can not over 8 characters
           </div>
         }
       </Form.Group>
@@ -80,17 +80,17 @@ export const RegisterForm = (props:switchModeParam) => {
         <Form.Control type={!open?"password":"text"} placeholder="Password" {...register("password", {pattern: checkRule ,required: true ,minLength: 6})} />
         {errors?.password?.type === "required" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>This field is required
+          <Icon icon='circle-exclamation' />This field is required
           </div>
         }
         {errors?.password?.type === "minLength" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>Passwords need at least 6 characters
+          <Icon icon='circle-exclamation' />Passwords need at least 6 characters
           </div>
         }
         {errors?.password?.type === "pattern" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>Passwords are only available for a combination 
+          <Icon icon='circle-exclamation' />Passwords are only available for a combination 
           of uppercase and lowercase letters, numbers
           </div>
         }
@@ -102,12 +102,12 @@ export const RegisterForm = (props:switchModeParam) => {
     } })} />
         {errors?.confirmPassword?.type === "required" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>This field is required
+          <Icon icon='circle-exclamation' />This field is required
           </div>
         }
         {errors?.confirmPassword?.type === "checkSame" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1 alert-font">warning</span>Validation password is different from what you input above
+          <Icon icon='circle-exclamation' />Validation password is different from what you input above
           </div>
         }
       </Form.Group>

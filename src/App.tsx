@@ -13,7 +13,7 @@ function App() {
   const {user} = useAuth()
   return (
     <div className="App">
-      {user? <Main /> :<BrandInfo />}
+      {user? <Main /> :<UnAuthScreen />}
     </div>
   );
 }

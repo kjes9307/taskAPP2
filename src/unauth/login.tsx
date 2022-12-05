@@ -35,12 +35,12 @@ export const LoginForm = (props:switchModeParam) => {
         <Form.Control  placeholder="Enter email" {...register("email",{ pattern: emailRule,required: true, })} />
         {errors?.email?.type === "pattern" && 
           <div className="text-danger d-flex align-items-center alert-font">
-            <span className="material-symbols-outlined me-1">warning</span>Email form error
+            <Icon icon='circle-exclamation' />Email form error
           </div>
         }
         {errors?.email?.type === "required" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1">warning</span>This field is required
+          <Icon icon='circle-exclamation' />This field is required
           </div>
         }
       </Form.Group>
@@ -49,7 +49,7 @@ export const LoginForm = (props:switchModeParam) => {
         <Form.Control type={!open?"password":"text"} placeholder="Password" {...register("password", { required: true })} />
         {errors?.password?.type === "required" && 
           <div className="text-danger d-flex align-items-center alert-font">
-          <span className="material-symbols-outlined me-1 mt-1">warning</span>This field is required
+          <Icon icon='circle-exclamation' />This field is required
           </div>
         }
       </Form.Group>
