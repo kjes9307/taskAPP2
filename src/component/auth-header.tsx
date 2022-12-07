@@ -1,14 +1,14 @@
 import {Container, Nav ,Navbar ,NavDropdown} from 'react-bootstrap'
 import { Link } from 'react-router-dom';
 import { useAuth } from 'context/userContext';
-
+import Icon from './Icon';
 export const AuthHeader = () =>{
     const {user,appLogout} = useAuth()
     return (
     <>
-    <Navbar bg="white" expand="lg" className="mb-md-3">
-      <Container fluid="md" >
-        <Link to="/" className='text-decoration-none brand-color bg-brand-font fs-2'>DETAILS</Link>
+    <Navbar expand="lg" className="mb-3">
+      <Container fluid>
+        <Link to="/" className='text-decoration-none bg-brand-font fs-2'><Icon icon='check-double' />MY PROJECT</Link>
         <Navbar.Toggle aria-controls="navbarScroll" className='border-0 fas fa-bars fa-2x brand-color' />
         <Navbar.Collapse id="navbarScroll">
           <Nav

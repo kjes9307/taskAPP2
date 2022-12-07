@@ -88,7 +88,7 @@ export const ContainItem = (props:ItemProps) =>{
         }
     }
     return (
-        <Col sm='6' md='4' lg='4'>
+        <Col md='4'>
         <div className="namecard mt-3">
             <h2 className="name">{item?.name}
             <span>(#{index as number +1})</span>
@@ -128,7 +128,7 @@ export const Task = () =>{
     }
     return (
         <>
-        <Container fluid="md">  
+        <Container fluid>  
         <SearchItem userList={userList || []} searchItem={searchItem} param={param} />
         <ContainBox todoList={todo || []} userList={userList|| []} />      
         </Container>
