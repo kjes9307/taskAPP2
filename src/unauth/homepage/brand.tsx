@@ -1,6 +1,7 @@
 import { Container,Row,Col,Button } from "react-bootstrap"
+import { Link } from "react-router-dom"
 import Icon from "component/Icon"
-export const BrandInfo = () =>{
+export const HomePage = () =>{
     return (
         <div>
             <header className="sticky-top pt-2">
@@ -9,7 +10,7 @@ export const BrandInfo = () =>{
                         <div className="fs-3 text-gradient">TASK</div>
                         <ul className="d-none d-sm-block d-sm-flex mb-0">
                             <li className="list-unstyled "><Button>先看看再決定</Button></li>
-                            <li className="list-unstyled ms-1"><Button>登入</Button></li>
+                            <li className="list-unstyled ms-1"><Button href='/login'>登入</Button></li>
                         </ul>
                     </div>
                 </Container>
