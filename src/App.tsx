@@ -5,7 +5,7 @@ import {Main} from "auth";
 import {library} from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import {BrandInfo} from 'unauth/brand'
-
+import Aside from 'component/aside';
 library.add(fas)
 
 function App() {
@@ -13,7 +13,8 @@ function App() {
   const {user} = useAuth()
   return (
     <div className="App">
-      {user? <Main /> :<UnAuthScreen />}
+      {/* {user? <Main /> :<UnAuthScreen />} */}
+      {/* <Main /> */}
     </div>
   );
 }

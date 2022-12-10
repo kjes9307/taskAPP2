@@ -1,5 +1,6 @@
 @use 'style/index.scss';
 .App{
-  min-height: 100vh;
+  height: 100vh;
   background: linear-gradient(90deg, rgba(#333399, 1), rgba(#ff00cc, 1));
+  overflow: hidden;
 }

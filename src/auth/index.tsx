@@ -1,6 +1,5 @@
 import { ReactQueryDevtools } from 'react-query/devtools'
 import { Route, Routes } from "react-router";
-import { BrowserRouter } from "react-router-dom";
 import { Container,Row, Col } from 'react-bootstrap';
 import { ProjectModal,DeleteNote } from "component/modal"
 
@@ -24,7 +23,7 @@ export const Main =() =>{
         {name:"invite",icon:"envelope"}
     ]
     return (
-        <BrowserRouter>
+        <>
             <AuthHeader />
             <Container fluid>
                 <Row>
@@ -65,6 +64,6 @@ export const Main =() =>{
             <ProjectModal projectModalOpen={false} />
             <DeleteNote deleteModalOpen={false} />
             <ReactQueryDevtools initialIsOpen={false} position='bottom-right' />
-        </BrowserRouter>
+        </>
     )
 }
