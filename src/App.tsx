@@ -1,15 +1,19 @@
 import './App.scss';
+import { Routes,Route } from "react-router-dom";
 import {library} from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import HomePage from 'unauth/homepage';
+import MemberForm from 'unauth/member';
 library.add(fas)
 
 function App() {
-  // 若需要user 資訊則從useAuth 取得
   return (
-    <div className="App">
-      <HomePage />
-    </div>
+    <Routes>
+      <Route path='/' element={<HomePage />} ></Route>
+      <Route path='/member' element={<MemberForm />}></Route>
+      <Route path='/task' element={<MemberForm />}></Route>
+      <Route index element={<HomePage />} ></Route>
+    </Routes>
   );
 }
 

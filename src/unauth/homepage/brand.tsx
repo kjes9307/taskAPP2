@@ -1,16 +1,15 @@
 import { Container,Row,Col,Button } from "react-bootstrap"
-import { Link } from "react-router-dom"
 import Icon from "component/Icon"
 export const HomePage = () =>{
     return (
-        <div>
+        <div className="App-background">
             <header className="sticky-top pt-2">
                 <Container>
                     <div className="d-flex justify-content-between align-items-center brand-line">
                         <div className="fs-3 text-gradient">TASK</div>
                         <ul className="d-none d-sm-block d-sm-flex mb-0">
-                            <li className="list-unstyled "><Button>先看看再決定</Button></li>
-                            <li className="list-unstyled ms-1"><Button href='/login'>登入</Button></li>
+                            <li className="list-unstyled "><Button href='/task'>先看看再決定</Button></li>
+                            <li className="list-unstyled ms-1"><Button href='/member'>登入</Button></li>
                         </ul>
                     </div>
                 </Container>
@@ -57,7 +56,7 @@ export const HomePage = () =>{
                     <div className="d-flex mt-3 justify-content-center align-items-center brand-img1">
                         <div className="d-flex justify-content-center align-items-center flex-column">
                             <Icon icon='recycle' size='10x' color="purple"/>
-                            <Button className="mt-2">試試看</Button>
+                            <Button href='/task' className="mt-2">試試看</Button>
                         </div>
                         <ul>
                             <li className="list-unstyled">
