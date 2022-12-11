@@ -14,9 +14,16 @@ const PageLayout:FC<PropsType> = ({children}) =>{
     return (
         <div className="app-layout">
             <div className={show ? 'sidebar-layout space-toggle-back' : 'sidebar-layout space-toggle-forward'}>
+                <Icon 
+                onClick={()=>setShow(!show)} 
+                icon={!show?'square-caret-left':'square-caret-right'} 
+                color='white' 
+                size='2x' 
+                className={`icontranslate space-toggle-back`} />
                 <div className={`sidebar-header bg-brand-font fs-2 ${show ? 'space-toggle-back' : 'space-toggle-forward'}`}>
                     <Icon icon='check-double' size='1x' />
                     <span>MY PROJECT</span>
+                    
                 </div>
                 <ul className={`sidebar text-white ${show ? 'show' :""} mb-0`}>
                     {/* <li className="d-flex justify-content-center" >
@@ -39,14 +46,7 @@ const PageLayout:FC<PropsType> = ({children}) =>{
                         </li>  
                     )})}
                 </ul>
-                <div className="position-relative border border-black content-body">
-                    <Icon 
-                        onClick={()=>setShow(!show)} 
-                        icon={!show?'square-caret-left':'square-caret-right'} 
-                        color='white' 
-                        size='1x' 
-                        className='position-absolute icontranslate' 
-                    />
+                <div className="content-body">
                     <div>
                     {children}
                     </div>

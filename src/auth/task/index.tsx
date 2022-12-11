@@ -17,43 +17,40 @@ export const SearchItem =(props:IfuncProps) =>{
         props.searchItem({...props.param,name: value})
     }
     return (
-        <section className='py-1'>
-            <Container fluid='md' >
-                <Row >
-                    <Col md='5' className='d-flex align-items-center'>
-                    <h3 className='font-color'>Note</h3>
-                    <span onClick={open} style={{cursor:"pointer"}} className="material-symbols-outlined ms-3">
-                        add
-                    </span>
-                    <span onClick={()=>{setOpen(!search);setSearchParam('')}} style={{cursor:"pointer"}} className="material-symbols-outlined ms-3">
-                            search
-                    </span>
-                    {/* value: 預設值 刷新的時候 不會反白  */}
-                    <Form.Select 
-                        value={props.param.personId? props.param.personId : '0'} 
-                        aria-label="Default select example" className='ms-3 font-color' 
-                        onChange={(e)=>props.searchItem({...props.param,personId: e.target.value ==='0'? undefined : e.target.value })}
-                    >
-                    <option value={'0'}>建立者</option>
-                    {
-                        props.userList?.map(i=>(
-                            <option value={i._id} key={i._id}>{i.name}</option>
-                        )) || <option key='1'>未知</option>
-                    }
-                    </Form.Select>
-                    </Col>
-                    <Col md='7' className='d-flex align-items-center'>
-                        { search ? 
-                        <InputGroup>
-                            <Form.Control
-                                placeholder="Search Task"
-                                onChange={(e)=> setSearchParam(e.currentTarget.value)}
-                            />
-                        </InputGroup>
-                        : null}
-                    </Col>
-                </Row>
-            </Container> 
+        <section className='search-bar'>
+          <div className='p-3'>
+            <div className='d-flex align-items-center'>
+            <h4>Note</h4>
+            <span onClick={open} style={{cursor:"pointer"}} className="material-symbols-outlined ms-3">
+                add
+            </span>
+            <span onClick={()=>{setOpen(!search);setSearchParam('')}} style={{cursor:"pointer"}} className="material-symbols-outlined ms-3">
+                    search
+            </span>
+            <Form.Select 
+                value={props.param.personId? props.param.personId : '0'} 
+                aria-label="Default select example" className='ms-3 font-color w-25' 
+                onChange={(e)=>props.searchItem({...props.param,personId: e.target.value ==='0'? undefined : e.target.value })}
+            >
+            <option value={'0'}>建立者</option>
+            {
+                props.userList?.map(i=>(
+                    <option value={i._id} key={i._id}>{i.name}</option>
+                )) || <option key='1'>未知</option>
+            }
+            </Form.Select>
+            </div>
+            <div className='d-flex align-items-center'>
+                { search ? 
+                <InputGroup>
+                    <Form.Control
+                        placeholder="Search Task"
+                        onChange={(e)=> setSearchParam(e.currentTarget.value)}
+                    />
+                </InputGroup>
+                : null}
+            </div>
+          </div>  
         </section>
     )
 }
@@ -89,7 +86,7 @@ export const ContainItem = (props:ItemProps) =>{
         }
     }
     return (
-        <Col md='4'>
+        <Col md='2'>
         <div className="namecard mt-3">
             <h2 className="name">{item?.name}
             <span>(#{index as number +1})</span>

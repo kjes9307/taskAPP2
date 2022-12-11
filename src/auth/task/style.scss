@@ -30,8 +30,8 @@
     }
   }
   .circle {
-    width:100px;
-    height:100px;
+    width:50px;
+    height:50px;
     border-radius:100%;
     position: absolute;
   }
@@ -63,5 +63,13 @@
       &:hover{
         transform: rotate(20deg);
       }
+  }
+
+  .search-bar{
+    background-color: #414141;
+    color: #b3b3b3;
+    padding: 0px 8px;
+    border-radius: 4px;
+    margin: 0px -20px;
   }
  
