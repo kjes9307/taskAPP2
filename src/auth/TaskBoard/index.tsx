@@ -9,6 +9,7 @@ import { SearchPanel } from './searchPanel';
 import {CreateTask} from './createTask';
 import {DeleteModal} from './deleteItem';
 import Icon from 'component/Icon'
+import PageLayout from 'auth/pageLayout';
 export const KanbanCol = React.forwardRef<HTMLDivElement,{kanban:Iprops<ColumnType>}>(({kanban,...props},ref) =>{
   
   return (
@@ -73,7 +74,7 @@ export const TaskBoard = ()=>{
     console.log(param)
   }
   return (
-    <>
+    <PageLayout>
     
       <Container fluid='md' className='overflow-hidden'>
       {isLoading?  
@@ -131,6 +132,6 @@ export const TaskBoard = ()=>{
       }
       </Container>
     
-    </>
+    </PageLayout>
   )
 }

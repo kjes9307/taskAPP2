@@ -8,6 +8,7 @@ import {useUserInfo} from 'utils/user';
 import {useProjectModal} from 'component/useModal'
 import {DataType,ItemProps,IfuncProps} from 'utils/type';
 import Icon from 'component/Icon'
+import PageLayout from 'auth/pageLayout';
 import "./style.scss"
 export const SearchItem =(props:IfuncProps) =>{
     const [search,setOpen] = useState(false)
@@ -127,11 +128,11 @@ export const Task = () =>{
         setParam(newObj);
     }
     return (
-        <>
+        <PageLayout>
         <Container fluid>  
         <SearchItem userList={userList || []} searchItem={searchItem} param={param} />
         <ContainBox todoList={todo || []} userList={userList|| []} />      
         </Container>
-        </>
+        </PageLayout>
     )
 }
