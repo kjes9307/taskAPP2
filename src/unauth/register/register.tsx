@@ -4,7 +4,7 @@ import {Form, Button, Spinner } from 'react-bootstrap';
 import {useAuth} from "context/userContext"
 import {useAsync} from "utils/use-async";
 import Icon from 'component/Icon'
-import {MainLayout} from 'unauth/layout'
+import {MainLayout} from 'unauth/login-layout'
 type RegisterInputs = {
   email: string,
   password: string,
