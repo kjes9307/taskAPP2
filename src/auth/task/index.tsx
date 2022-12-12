@@ -82,7 +82,7 @@ export const ContainItem = (props:ItemProps) =>{
     const navigate = useNavigate();
     const onHandleLink = (id:string) =>{
         if(id){
-            navigate(`task/${id}/Event`)
+            navigate(`${id}/Event`)
         }
     }
     return (

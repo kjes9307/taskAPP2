@@ -74,8 +74,6 @@ export const TaskBoard = ()=>{
     console.log(param)
   }
   return (
-    <PageLayout>
-    
       <Container fluid='md' className='overflow-hidden'>
       {isLoading?  
       <Spinner animation="border" role="status">
@@ -131,7 +129,5 @@ export const TaskBoard = ()=>{
       </>
       }
       </Container>
-    
-    </PageLayout>
   )
 }
