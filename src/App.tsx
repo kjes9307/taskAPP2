@@ -8,10 +8,12 @@ import { Task } from 'auth/task'
 import { Board } from 'auth/board'
 import { Epic } from 'auth/epic';
 import { TaskBoard } from 'auth/TaskBoard';
+import { ProjectModal,DeleteNote } from "component/modal"
 library.add(fas)
 
 function App() {
   return (
+    <>
     <Routes>
       <Route path='/' element={<HomePage />} ></Route>
       <Route path='/member' element={<MemberForm />}></Route>
@@ -22,8 +24,10 @@ function App() {
         <Route index element={<TaskBoard />} />
       </Route>
       <Route index element={<HomePage />} ></Route>
-      
     </Routes>
+    <ProjectModal projectModalOpen={false} />
+    <DeleteNote deleteModalOpen={false} />
+    </>
   );
 }
 

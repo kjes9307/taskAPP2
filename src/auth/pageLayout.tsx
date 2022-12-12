@@ -1,6 +1,7 @@
 import Icon from "component/Icon"
 import {IconName} from '@fortawesome/fontawesome-common-types';
 import { useState,FC, ReactNode } from 'react';
+
 interface PropsType{
     children : ReactNode
 }
@@ -25,7 +26,7 @@ const PageLayout:FC<PropsType> = ({children}) =>{
                     <span>MY PROJECT</span>
                     
                 </div>
-                <ul className={`sidebar text-white ${show ? 'show' :""} mb-0`}>
+                <ul className={`sidebar text-white ${show ? 'show-sidebar' :""} mb-0`}>
                     {/* <li className="d-flex justify-content-center" >
                         <Icon icon='shuttle-space' size="2x" color="white"/>
                     </li> */}
